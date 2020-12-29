@@ -1,0 +1,32 @@
+<header id="home">
+    <div class="wrapper">
+        <h1 class="heading">FRENKIE'S COFFEE</h1>
+    </div>
+</header>
+<main>
+    <div id="about_scroll"></div>
+    <h2 class="about_us">Ласкаво просимо на каву!</h2>
+    <p class="about_text">Frenkie's Coffee - це сучасна європейська кав'ярня. Ми готуємо неперевершену каву і щиро радіємо всім бажаючим її скуштувати.</p>
+    <div class="menu">
+        <div class="menu_coffee menu_item">
+            <img src="https://streetcoffee.com.ua/wp-content/themes/street_coffe/img/main_page/coffe.png" alt="coffee" class="menu_img">
+            <h3 class="menu_header">Кава та кавові напої</h3>
+            <p class="menu_text">Еспресо, американо, капучіно,латте, карамель маккіато, мокка, гляссе, раф кава, латте смажений горіх, латте шоколадне печиво, еспресо без кофеїну, американо без кофеїну, латте без кофеїну, фраппе латте, фраппе смажений горіх</p>
+        </div>
+        <div class="menu_tea menu_item">
+            <img src="https://streetcoffee.com.ua/wp-content/themes/street_coffe/img/main_page/tea.png" alt="tea" class="menu_img">
+            <h3 class="menu_header">Фірмові чаї</h3>
+            <p class="menu_text">Чорний, зелений, фруктовий, трав'яний, по-східному, імбирний, Street Cranberries, мандариновий, медова груша, малиновий, какао з вершками, какао з маршмеллоу, гарячий шоколад, густий гарячий шоколад з арахісом, гаряче молоко</p>
+        </div>
+        <div class="menu_cold menu_item">
+            <img src="https://streetcoffee.com.ua/wp-content/themes/street_coffe/img/main_page/cold_drink.png" alt="cold" class="menu_img">
+            <h3 class="menu_header">Холодні напої</h3>
+            <p class="menu_text">Айс какао, яблучно пряний квас, лимонад класичний, лимонад грейпфрутовий з бузиною, лимонад груша-тархун,лимонад екзотичний, мохіто полуничне, фріз апельсиновий, фреш, смузі, полунично-банановий коктейль, тропікана шейк, бабл гам</p>
+        </div>
+    </div>
+    
+    <app-discount
+            *ngFor="let discount of discounts"
+            [discount]="discount"
+            ></app-discount>
+</main>

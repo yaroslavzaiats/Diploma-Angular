@@ -1,0 +1,76 @@
+header {
+    background-image: url(img/coffee.jpeg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    height: 650px;
+    color: white;
+    font-size: 40px;
+}
+.heading {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_us {
+    margin-top: 55px;
+    margin-bottom: 140px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 70px;
+}
+#about_scroll {
+    padding-bottom: 100px;
+}
+.about_text{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    width: 650px;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 140px;
+}
+.menu{
+    background: url(img/menu_bg.jpg) no-repeat center center fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 585px;
+    background-size: cover;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin-bottom: 120px;
+}
+.menu_item{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 410px;
+}
+.menu_text{
+    text-align: center;
+}
+.discounts{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.discounts_heading{
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 70px;
+    margin-bottom: 120px;
+}

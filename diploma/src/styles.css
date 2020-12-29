@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+body {
+    margin: 0px;
+    background-color: #9365E9;
+    padding-right: 0 !important;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

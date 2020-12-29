@@ -1,0 +1,58 @@
+<div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+        <img src={{card.src}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{card.name}}</h5>
+          <p class="price">{{card.price}}</p>
+          <p class="card-text">{{card.text}}</p>
+          <div class="card_buttons">
+            <button type="button" class="btn btn-primary сharacteristic_btn" data-toggle="modal" attr.data-target={{card.modalTarget}}>
+              Характеристика
+            </button>
+            <button type="button" class="btn btn-primary" (click) = "addToCart(card)">В кошик</button>
+            
+          </div>
+          <div class="modal fade" id={{card.modalID}} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content"> 
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">{{card.name}}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p>Особливості</p>
+                      <p>{{card.specialty}}</p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Тип кави</p>
+                      <p>{{card.type}}</p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Вага</p>
+                      <p>{{card.mass}}</p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Сорт кави</p>
+                      <p>{{card.sort}}</p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Ступінь обсмажування</p>
+                      <p>{{card.frying}}</p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Країнa-виробник</p>
+                      <p>{{card.country}}</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>

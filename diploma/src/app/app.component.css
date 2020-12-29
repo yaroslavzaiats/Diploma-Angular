@@ -1,0 +1,119 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #5C0F47;
+    opacity: 86%;
+    color: white;
+    width: 100%;
+    z-index: 1;
+
+    animation-name: navigation_animation;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+}
+@keyframes navigation_animation {
+    0%{
+        top: -100px;
+    }
+    50%{
+        top: 0px;
+        height: 100px;
+    }
+    100%{
+        top: 0px;
+        height: 70px;
+    }
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo_bg {
+    border-radius: 100%;
+    background: url(logo2.ico) no-repeat center/cover;
+    opacity: 90%;
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+.logo_img {
+    height: 50px;
+}
+.logo_text {
+    font-family: 'Roboto', sans-serif;
+    height: 25px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    height: 100%;
+}
+.navigation li {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.navigation li:hover {
+    background-color: rgb(173, 98, 43);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+footer {
+    background-color: #641b5e;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.map{
+    width: 300px;
+    height: 300px;
+}
+.stay_in_touch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.stay_in_touch_heading{
+    font-size: 27px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+}
+.form_email{
+    width: 200px;
+    margin-bottom: 15px;
+}
+.btn{
+    width: 200px;
+}
+.footer_form_map{
+    display: flex;
+    justify-content: space-evenly;  
+    width: 100%;
+    padding-top: 70px;
+}
+.copyring{
+    color: white;
+}
